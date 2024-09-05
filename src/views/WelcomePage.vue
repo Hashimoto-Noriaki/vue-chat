@@ -1,8 +1,7 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p>{{  subtitle }}</p>
-    <p>{{ "犬" }}</p>
+    <p v-if="false">{{ subtitle }}</p>
   </div>
 </template>
 
