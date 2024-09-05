@@ -1,15 +1,17 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p v-if="isEnabled">{{ subtitle  }}</p>
-    <button @dblclick="toggle">トグル</button>
-    <p> {{  text }}</p>
+    <TestComponent/>
   </div>
 </template>
 
 <script>
+import TestComponent from "../components/TestComponent.vue"
 
 export default({
+  components: {
+    TestComponent
+  },
   data() {
     return{
       title: "Vue入門",
