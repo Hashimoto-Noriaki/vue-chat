@@ -37,3 +37,9 @@ export default({
 })
 </script>
 
+<style scoped>
+  p{
+    font-size:50px;
+    color:red;
+  }
+</style>
