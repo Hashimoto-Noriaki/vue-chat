@@ -2,7 +2,7 @@
   <div>
     <h1>{{ title }}</h1>
     <p v-if="isEnabled">{{ subtitle  }}</p>
-    <button v-on:click="toggle">トグル</button>
+    <button @dblclick="toggle">トグル</button>
   </div>
 </template>
 
