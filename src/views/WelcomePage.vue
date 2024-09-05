@@ -1,12 +1,13 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <TestComponent/>
+    <TestComponent @toggle="toggle" message="コンポーネントにデータが渡されています"/>
+    <p v-if="isEnabled">ハロー</p>
   </div>
 </template>
 
 <script>
-import TestComponent from "../components/TestComponent.vue"
+import TestComponent from '@/components/TestComponent.vue';
 
 export default({
   components: {
