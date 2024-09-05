@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p v-if="false">{{ subtitle }}</p>
+    <p v-if="isEnable">{{ subtitle  }}</p>
   </div>
 </template>
 
@@ -11,7 +11,8 @@ export default({
   data() {
     return{
       title: "Vue入門",
-      subtitle: "Vue練習"
+      subtitle: "Vue練習",
+      isEnable: true
     }
   },
 })
