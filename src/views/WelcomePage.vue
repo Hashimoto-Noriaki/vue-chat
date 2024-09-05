@@ -1,45 +1,15 @@
 <template>
-  <div>
-    <h1>{{ title }}</h1>
-    <TestComponent @toggle="toggle" message="コンポーネントにデータが渡されています"/>
-    <p v-if="isEnabled">ハロー</p>
+  <div class="container welcome">
+    ようこそ
   </div>
 </template>
 
 <script>
-import TestComponent from '@/components/TestComponent.vue';
-
-export default({
-  components: {
-    TestComponent
-  },
-  data() {
-    return{
-      title: "Vue入門",
-      subtitle: "Vue練習",
-      isEnabled: true
-    }
-  },
-  computed: {
-    text(){
-      if(this.isEnabled){
-        return "ハロー"
-      } else {
-        return "きゃー"
-      }
-    }
-  },
-  methods: {
-    toggle(){
-      this.isEnabled = !this.isEnabled
-    }
-  }
-})
 </script>
 
 <style scoped>
-  p{
-    font-size:50px;
-    color:red;
+  .welcome {
+    text-align: center;
+    padding:20px 0;
   }
 </style>
