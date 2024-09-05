@@ -1,12 +1,12 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <TestComponent/>
+    <TestComponent message="コンポーネントにデータが渡されています"/>
   </div>
 </template>
 
 <script>
-import TestComponent from "../components/TestComponent.vue"
+import TestComponent from '@/components/TestComponent.vue';
 
 export default({
   components: {
