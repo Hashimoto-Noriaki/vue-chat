@@ -1,7 +1,8 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p v-if="isEnable">{{ subtitle  }}</p>
+    <p v-if="isEnabled">{{ subtitle  }}</p>
+    <button v-on:click="toggle">トグル</button>
   </div>
 </template>
 
@@ -12,9 +13,14 @@ export default({
     return{
       title: "Vue入門",
       subtitle: "Vue練習",
-      isEnable: true
+      isEnabled: true
     }
   },
+  methods: {
+    toggle(){
+      this.isEnabled = !this.isEnabled
+    }
+  }
 })
 </script>
 
