@@ -1,7 +1,8 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <TestComponent :isEnabled = "isEnabled" message="コンポーネントにデータが渡されています"/>
+    <TestComponent @toggle="toggle" message="コンポーネントにデータが渡されています"/>
+    <p v-if="isEnabled">ハロー</p>
   </div>
 </template>
 
