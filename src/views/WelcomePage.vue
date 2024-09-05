@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <TestComponent message="コンポーネントにデータが渡されています"/>
+    <TestComponent :isEnabled = "isEnabled" message="コンポーネントにデータが渡されています"/>
   </div>
 </template>
 
